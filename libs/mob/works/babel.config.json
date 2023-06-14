@@ -1,0 +1,19 @@
+{
+  "presets": [
+    [
+      "@nx/react/babel",
+      {
+        "runtime": "automatic",
+        "useBuiltIns": "usage"
+      }
+    ]
+  ],
+  "plugins": [],
+  "env": {
+    "test": {
+      "presets": ["module:metro-react-native-babel-preset"],
+      "plugins": ["@babel/plugin-proposal-class-properties","@babel/plugin-transform-private-methods"]
+
+    }
+  }
+}
